@@ -17,8 +17,14 @@ const Work: React.FC = () => {
         <div className="work-container">
           <Image src="/work.png" width={273} height={151} alt="work" className="scroll-img" />
         </div>
+        <div className="work-container">
+          <Image src="/work.png" width={273} height={151} alt="work" className="scroll-img" />
+        </div>
       </div>
       <div className="work-row">
+        <div className="work-container">
+          <Image src="/work.png" width={273} height={151} alt="work" className="scroll-img" />
+        </div>
         <div className="work-container">
           <Image src="/work.png" width={273} height={151} alt="work" className="scroll-img" />
         </div>
