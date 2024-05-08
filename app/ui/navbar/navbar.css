@@ -1,0 +1,26 @@
+.NavBar {
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  position: absolute;
+  top: 26px;
+  right: 50%;
+  transform: translateX(50%);
+  /* font styling */
+}
+
+.nav-right {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+}

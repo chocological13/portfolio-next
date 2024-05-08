@@ -1,0 +1,447 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Hero */
+
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #c7c0d9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow-x: hidden;
+}
+
+.hero-img {
+  width: 501px;
+  height: 654px;
+  position: relative;
+}
+
+.hero-section p {
+  width: 120vw;
+  text-align: left;
+  margin-left: 20vw;
+}
+
+.hero-title {
+  width: 120vw;
+  font-size: 150.38px;
+  font-weight: 500;
+  line-height: 180.45px;
+  text-align: left;
+  position: absolute;
+  color: white;
+}
+
+/* CTA Button */
+
+.cta-button {
+  width: 358px;
+  height: 95px;
+  background-color: black;
+  border-radius: 99px 0 0 99px;
+  position: absolute;
+  right: -17%;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  display: flex;
+}
+
+.cta-button:hover {
+  right: 0;
+  transition: 1s;
+}
+
+.cta-button:not(:hover) {
+  right: -17%;
+  transition: 1s;
+}
+
+.cta-button p {
+  font-size: 60px;
+  margin-left: 15px;
+}
+
+.cta-button p > span > a {
+  /* font-family: Neue Montreal; */
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Menu */
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  height: 100%;
+  width: 40%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding: 60px 30px 0 30px;
+  transition: 0.5s;
+}
+
+.sidenav-menu {
+  /* padding-top: 30px; */
+}
+
+.sidenav-menu .closebtn {
+  position: absolute;
+  top: 5%;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav-menu ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.sidenav-menu ul > li {
+  list-style-type: none;
+  /* font-family: Neue Montreal; */
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 72px;
+  text-align: left;
+}
+
+/* this aint working */
+.sidenav-menu ul > li:hover {
+  list-style-type: disc;
+}
+
+.sidenav-menu a {
+  color: #f4f7fa;
+}
+
+.sidenav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.sidenav-links a {
+  color: #f4f7fa;
+}
+
+/* About */
+
+.about {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  margin-bottom: 160px;
+}
+
+.about-1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 160px;
+}
+
+.about-title {
+  /* font-family: Neue Montreal; */
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+}
+
+.about-text {
+  /* font-family: Neue Montreal; */
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 37.8px;
+  text-align: left;
+}
+
+.recent-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #c7d0d9;
+}
+
+.recent-container:first-child {
+  padding-top: 0;
+}
+
+.recent-container:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.url-role {
+  padding: 0;
+}
+
+.url-text a {
+  /* font-family: Inter; */
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 53px;
+  text-align: left;
+  height: 73px;
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+
+.role-text {
+  height: 29px;
+  margin-bottom: 0;
+  /* font-family: Neue Montreal; */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+}
+
+.work-icon img {
+  width: 85px;
+}
+
+.arrow-img:hover {
+  content: url("/arrow-dark.png");
+}
+
+/* Work */
+
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 160px;
+}
+
+.work-row {
+  display: flex;
+  flex-shrink: 0;
+  gap: 20px;
+  justify-content: center;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.work-container {
+  width: 444px;
+  height: 300px;
+  padding: 56px 48px 0px 48px;
+  gap: 10px;
+  border-radius: 4px;
+  opacity: 0px;
+  background-color: #c7d0d9;
+  flex-shrink: 0;
+}
+
+.scroll-img {
+  width: 348px;
+  display: flex;
+}
+
+/* Testimonials */
+
+.testi-container {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 160px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.testitle {
+  /* font-family: Neue Montreal; */
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+}
+
+.testi-item {
+  margin-bottom: 24px;
+}
+
+.testi-profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.testi-text {
+  margin-bottom: 28px;
+  /* font-family: Neue Montreal; */
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 37.8px;
+  text-align: left;
+}
+
+.testi-profile img {
+  width: 64px;
+  margin-right: 12px;
+}
+
+.testi-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  /* font-family: Neue Montreal; */
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.8px;
+  text-align: left;
+}
+
+.profile-role {
+  /* font-family: Neue Montreal; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+}
+
+/* Footer */
+
+.footer {
+  width: 100vw;
+  height: 440px;
+  background-color: black;
+  position: relative;
+}
+
+.get-in-touch {
+  width: 80vw;
+  position: absolute;
+  top: 80px;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.touch-text {
+  /* font-family: Neue Montreal; */
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 72px;
+  text-align: left;
+  color: #f4f7fa;
+}
+
+.touch-text p {
+  margin-bottom: 10px;
+}
+
+.touch-text p > span {
+  position: relative;
+  bottom: 20px;
+}
+
+.get-in-touch button {
+  width: fit-content;
+  height: 70px;
+  top: 135px;
+  left: 1162px;
+  padding: 24px 48px 24px 48px;
+  gap: 10px;
+  border-radius: 170px;
+  border: none;
+  opacity: 0px;
+  background-color: #f4f7fa;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: black;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  color: #f4f7fa;
+}
+
+.socials-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.socials-links {
+  color: #f4f7fa;
+  text-decoration: none;
+}
+
+.footer-bot {
+  position: absolute;
+  bottom: 33px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+ */
