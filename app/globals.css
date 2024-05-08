@@ -37,11 +37,9 @@ body {
 }
 
 .hero-title {
-  width: 120vw;
   font-size: 150.38px;
   font-weight: 500;
   line-height: 180.45px;
-  text-align: left;
   position: absolute;
   color: white;
 }
@@ -204,6 +202,10 @@ body {
   padding: 0;
 }
 
+.url-text {
+  margin-bottom: 20px;
+}
+
 .url-text a {
   /* font-family: Inter; */
   font-size: 60px;
@@ -212,7 +214,6 @@ body {
   text-align: left;
   height: 73px;
   margin-top: auto;
-  margin-bottom: 30px;
 }
 
 .role-text {
@@ -261,6 +262,7 @@ body {
   opacity: 0px;
   background-color: #c7d0d9;
   flex-shrink: 0;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .scroll-img {
